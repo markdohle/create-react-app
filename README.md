@@ -196,6 +196,33 @@ Check out [Expo CLI](https://github.com/expo/expo-cli).
 
 We'd love to have your helping hand on `create-react-app`! See [CONTRIBUTING.md](CONTRIBUTING.md) for more information on what we're looking for and how to get started.
 
+Add bootstrap to app directory  ```npm install bootstrap```
+
+1. Open index.js
+2. Add code below to import file from the node_modules directory
+
+```import 'bootstrap/dist/css/bootstrap.css'```
+
+3. Navigate to App.js and replace the standard div with a bootstrap card.
+
+```
+    <div className="container">
+        <div className="card">
+            <div className="card-header">
+            Featured
+            </div>
+            <div className="card-body">
+            <h5 className="card-title">Special title treatment</h5>
+            <p className="card-text">With supporting text below as a natural lead-in to additional content.</p>
+            <a href="#" className="btn btn-primary">Go somewhere</a>
+            </div>
+        </div>
+    </div>
+```    
+4. After App.js is updated you can start the app by typing the code below into the terminal. The card will appear in the browser!
+
+```npm start```
+
 ## Supporting Create React App
 
 Create React App is a community maintained project and all contributors are volunteers. If you'd like to support the future development of Create React App then please consider donating to our [Open Collective](https://opencollective.com/create-react-app).
